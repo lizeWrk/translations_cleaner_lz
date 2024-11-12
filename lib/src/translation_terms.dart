@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:translations_cleaner/src/models/term.dart';
+import 'package:translations_cleaner_lz/src/models/term.dart';
 import 'package:glob/glob.dart';
 import 'package:glob/list_local_fs.dart';
 

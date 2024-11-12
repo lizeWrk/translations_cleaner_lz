@@ -6,7 +6,7 @@ import 'package:glob/list_local_fs.dart';
 /// Get a list of all `.dart` files in the project
 List<FileSystemEntity> getDartFiles() {
   final path = Directory.current.path;
-  final dartFile = Glob("$path/lib/**.dart");
+  final dartFile = Glob("$path/lib/app/**.dart");
   final dartFiles = <FileSystemEntity>[];
   for (var entity in dartFile.listSync(followLinks: false)) {
     dartFiles.add(entity);

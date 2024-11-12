@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:args/args.dart';
-import 'package:translations_cleaner/src/export_unused_terms.dart';
-import 'package:translations_cleaner/src/models/term.dart';
-import 'package:translations_cleaner/src/translation_files.dart';
-import 'package:translations_cleaner/src/unused_terms.dart';
+import 'package:translations_cleaner_lz/src/export_unused_terms.dart';
+import 'package:translations_cleaner_lz/src/models/term.dart';
+import 'package:translations_cleaner_lz/src/translation_files.dart';
+import 'package:translations_cleaner_lz/src/unused_terms.dart';
 
 /// Delete unused terms from the dart files
 Future<void> deleteTerms(ArgResults? argResults) async {
@@ -22,8 +22,7 @@ Future<void> deleteTerms(ArgResults? argResults) async {
   print('${terms.length} terms removed from ${files.length} files each 💪 🚀');
 }
 
-Future<void> _deleteTermsForFile(
-    FileSystemEntity arbFile, Set<Term> terms) async {
+Future<void> _deleteTermsForFile(FileSystemEntity arbFile, Set<Term> terms) async {
   final fileString = await File(arbFile.path).readAsString();
   final Map<String, dynamic> fileJson = jsonDecode(fileString);
   for (var term in terms) {
@@ -33,6 +32,5 @@ Future<void> _deleteTermsForFile(
     }
   }
   // Indent is being used for proper formatting
-  await File(arbFile.path)
-      .writeAsString(JsonEncoder.withIndent(' ' * 4).convert(fileJson));
+  await File(arbFile.path).writeAsString(JsonEncoder.withIndent(' ' * 4).convert(fileJson));
 }

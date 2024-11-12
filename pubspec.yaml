@@ -1,4 +1,4 @@
-name: translations_cleaner
+name: translations_cleaner_lz
 description: Package to remove unused keys in arb files, across all translations
 version: 0.0.5
 repository: https://github.com/lizeWrk/translations_cleaner_lz

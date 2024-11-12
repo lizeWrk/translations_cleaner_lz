@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:args/command_runner.dart';
-import 'package:translations_cleaner/src/export_unused_terms.dart';
-import 'package:translations_cleaner/src/unused_terms.dart';
+import 'package:translations_cleaner_lz/src/export_unused_terms.dart';
+import 'package:translations_cleaner_lz/src/unused_terms.dart';
 
 /// Command for listing and exporting unused translations
 class ListUnusedTranslations extends Command {
@@ -23,8 +23,7 @@ class ListUnusedTranslations extends Command {
   }
 
   @override
-  String get description =>
-      'Search all the translations listed in arb files and '
+  String get description => 'Search all the translations listed in arb files and '
       'print/save a list of unused translations';
 
   @override

@@ -1,20 +1,25 @@
-# translations_cleaner
+# translations_cleaner_lz
 
 Dart package to search and delete unused translations from `.arb` files, for all languages, all in one go.
 
 > NOTE : This package has been developed keeping `flutter_localizations` package in mind, which uses `.arb` files for all translations.
 
-![Package in action](https://github.com/Chinmay-KB/translations_cleaner/blob/main/images/terminal.png?raw=true)
+![Package in action](https://github.com/lizeWrk/translations_cleaner_lz)
 
 ## Usage
 
 ```sh
-# Add translations_cleaner as a dev dependency
-dart pub add --dev translations_cleaner
+# Add translations_cleaner_lz as a Local dependency
+dependencies:
+  translations_cleaner_lz:
+    path: "../translations_cleaner_lz"
 
-dart run translations_cleaner <command> [arguments]
+# Add translations_cleaner_lz as a dev dependency
+dart pub add --dev translations_cleaner_lz
+
+dart run translations_cleaner_lz <command> [arguments]
 # OR
-flutter pub run translations_cleaner <command> [arguments]
+flutter pub run translations_cleaner_lz <command> [arguments]
 
 ```
 
@@ -43,7 +48,7 @@ Checking for unused translations is tedious, hence this package.
 
 ## How 🤖
 
-- `translations_cleaner` looks for all the `.arb` files located in the directory, and fetches all the translations, from all the languages.
+- `translations_cleaner_lz` looks for all the `.arb` files located in the directory, and fetches all the translations, from all the languages.
 - Then it looks for all the `.dart` files.
 - All the translation terms are looked for in these dart files
 - The translations not found in the dart files are removed from the corresponding `.arb` files, including any attributes as well

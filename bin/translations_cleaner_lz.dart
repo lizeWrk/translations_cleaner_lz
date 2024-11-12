@@ -5,7 +5,7 @@ import 'commands/list_unused_translations.dart';
 
 void main(List<String> arguments) {
   CommandRunner(
-      'dart pub run translations_cleaner',
+      'dart pub run translations_cleaner_lz',
       'Dart package to clean unused '
           'translations from the arb files')
     ..addCommand(CleanTranslation())

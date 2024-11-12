@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:translations_cleaner/src/models/term.dart';
-import 'package:translations_cleaner/src/project_files.dart';
-import 'package:translations_cleaner/src/translation_terms.dart';
+import 'package:translations_cleaner_lz/src/models/term.dart';
+import 'package:translations_cleaner_lz/src/project_files.dart';
+import 'package:translations_cleaner_lz/src/translation_terms.dart';
 
 /// Searches through all `*.arb` files to check which translation terms
 /// have not been used.
