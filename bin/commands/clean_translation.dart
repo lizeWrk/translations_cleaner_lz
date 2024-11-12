@@ -1,5 +1,5 @@
 import 'package:args/command_runner.dart';
-import 'package:translations_cleaner/src/delete_terms.dart';
+import 'package:translations_cleaner_lz/src/delete_terms.dart';
 
 /// Command for cleaning the translation files from all the unused translations
 class CleanTranslation extends Command {
@@ -15,8 +15,7 @@ class CleanTranslation extends Command {
   }
 
   @override
-  String get description =>
-      'Search all the translations listed in arb files and '
+  String get description => 'Search all the translations listed in arb files and '
       'delete the unused translations';
 
   @override
