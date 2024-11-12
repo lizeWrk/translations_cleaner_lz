@@ -4,11 +4,16 @@ Dart package to search and delete unused translations from `.arb` files, for all
 
 > NOTE : This package has been developed keeping `flutter_localizations` package in mind, which uses `.arb` files for all translations.
 
-![Package in action](https://github.com/Chinmay-KB/translations_cleaner_lz/blob/main/images/terminal.png?raw=true)
+![Package in action](https://github.com/lizeWrk/translations_cleaner_lz)
 
 ## Usage
 
 ```sh
+# Add translations_cleaner_lz as a Local dependency
+dependencies:
+  translations_cleaner_lz:
+    path: "../translations_cleaner_lz"
+
 # Add translations_cleaner_lz as a dev dependency
 dart pub add --dev translations_cleaner_lz
 
