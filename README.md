@@ -9,6 +9,12 @@ Dart package to search and delete unused translations from `.arb` files, for all
 ## Usage
 
 ```sh
+# Add translations_cleaner_lz as a github dependency
+translations_cleaner_lz:
+    git:
+      url: https://github.com/lizeWrk/translations_cleaner_lz
+      ref: main
+
 # Add translations_cleaner_lz as a Local dependency
 dependencies:
   translations_cleaner_lz:
